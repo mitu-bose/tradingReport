@@ -15,12 +15,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.stereotype.Service;
 
-import com.jpmc.tradingReport.controller.MalFormedJsonRequestException;
 import com.jpmc.tradingReport.domain.DailySettlement;
 import com.jpmc.tradingReport.domain.EntityRank;
 import com.jpmc.tradingReport.domain.Report;
 import com.jpmc.tradingReport.domain.Transaction;
 import com.jpmc.tradingReport.util.Instruction;
+import com.jpmc.tradingReport.util.MalFormedJsonRequestException;
 
 @Service
 public class ReportService {

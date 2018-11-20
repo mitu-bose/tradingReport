@@ -1,6 +1,5 @@
 package com.jpmc.tradingReport.controller;
 
-import java.util.List;
 import java.util.Locale;
 
 import javax.validation.Valid;
@@ -11,11 +10,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.jpmc.tradingReport.controller.ReportNotFoundException;
 import com.jpmc.tradingReport.domain.Report;
-import com.jpmc.tradingReport.domain.Transaction;
 import com.jpmc.tradingReport.domain.WrapperTransaction;
 import com.jpmc.tradingReport.service.ReportService;
+import com.jpmc.tradingReport.util.MalFormedJsonRequestException;
+import com.jpmc.tradingReport.util.ReportNotFoundException;
+
 
 @RestController
 public class ReportController {
