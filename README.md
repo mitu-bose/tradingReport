@@ -1,8 +1,8 @@
 # tradingReport
 
 This is a trading report application.
-The endpoint "http://localhost:8080/transactionReport" is used for displaying the report. It is a post request.
-The Sample Input of the request is.
+The endpoint "http://localhost:8080/transactionReport" is used for displaying the report. This endpoint expects a post request.
+The Sample Input for the request is:
 
 	{ "transactions": [{ "entity": "foo", 
 		"instruction": "S", 
