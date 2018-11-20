@@ -22,6 +22,7 @@ The Sample Input for the request is:
 		"settlementDate": "03 Jan 2016",
 		"units": 1000, 
 		"pricePerUnit": 200.25
-	}]	
-}
+	}]
+	}
+
 
