@@ -26,28 +26,28 @@ The Sample Input for the request is:
 		"pricePerUnit": 200.25
 	}]
 	}
+Response is generated in below format:
 
-Response is generated in below format
+	{
+	"dailySettlementList": {
+		"04 Jan 2016": { 
+			"incomingAmount": 10025,
+			"outgoingAmount": 100125 
+		}
+	},
+	"incomingEntityRankList": [
+		{
+			"rankNo": 1,
+			"entity": "foo",
+			"totalAmount": 10025
+		}
+	],
+	"outgoingEntityRankList": [	
+		{
+			"rankNo": 1,
+			"entity": "Bar",
+			"totalAmount": 100125		
+		}
+	]
+	}
 
-{
-    "dailySettlementList": {
-        "04 Jan 2016": {
-            "incomingAmount": 10025,
-            "outgoingAmount": 100125
-        }
-    },
-    "incomingEntityRankList": [
-        {
-            "rankNo": 1,
-            "entity": "foo",
-            "totalAmount": 10025
-        }
-    ],
-    "outgoingEntityRankList": [
-        {
-            "rankNo": 1,
-            "entity": "Bar",
-            "totalAmount": 100125
-        }
-    ]
-}
